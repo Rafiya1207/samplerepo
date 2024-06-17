@@ -1,15 +1,19 @@
 <html>
     <body>
-        <canvas id="can" width="150" height="120"
+        <canvas id="can" width="500" height="300"
             style="border: 1px solid #000;">
         </canvas>
         <script>
             var canvas = document.getElementById('can');
             var context = canvas.getContext("2d");
-            context.fillStyle= '#C8102E';
-            context.fillRect(0,0,150,40);
+            context.fillStyle= '#C8102E';//netherlands
+            context.fillRect(2,2,150,40);
             context.fillStyle= '#003DA5';
-            context.fillRect(0,80,150,40);
+            context.fillRect(2,82,150,40);
+            context.fillStyle= 'blue';//france
+            context.fillRect(170,2,40,120);
+            context.fillStyle= 'red';
+            context.fillRect(250,2,40,120);
         </script>
     </body>
 </html>
