@@ -1,70 +1,94 @@
 <html>
     <body>
-        <canvas id="can" width="550" height="300"
+        <canvas id="netherlands" width="150" height="120"
+            style="border: 1px solid #000;">
+        </canvas>
+        <canvas id="france" width="120" height="120"
+            style="border: 1px solid #000;">
+        </canvas>
+        <canvas id="finland" width="150" height="120"
+            style="border: 1px solid #000;">
+        </canvas>
+        <canvas id="iceland" width="150" height="120"
+            style="border: 1px solid #000;">
+        </canvas>
+        <canvas id="georgia" width="150" height="120"
+            style="border: 1px solid #000;">
+        </canvas>
+        <canvas id="greece" width="160" height="108"
             style="border: 1px solid #000;">
         </canvas>
         <script>
-            var canvas = document.getElementById('can');
-            var context = canvas.getContext("2d");
-            context.fillStyle= '#C8102E';//netherlands
-            context.fillRect(2,2,150,40);
-            context.fillStyle= '#003DA5';
-            context.fillRect(2,82,150,40);
-            context.fillStyle= 'blue';//france
-            context.fillRect(170,2,40,120);
-            context.fillStyle= 'red';
-            context.fillRect(250,2,40,120);
-            context.fillStyle= 'rgb(0, 100, 200)';//finland
-            context.fillRect(310,50,150,20);
-            context.fillStyle= 'rgb(0, 100, 200)';
-            context.fillRect(360,2,20,120);
-            context.fillStyle= '#0050db';//iceland
-            context.fillRect(2,140,150,120);
-            context.fillStyle= '#FFFF';
-            context.fillRect(2,190,150,25);
-            context.fillStyle= '#FFFF';
-            context.fillRect(42,140,25,120);
-            context.fillStyle= '#dc3551';
-            context.fillRect(2,195,150,15);
-            context.fillStyle= '#dc3551';
-            context.fillRect(47,140,15,120);
-            context.fillStyle= 'red'; //georgia
-            context.fillRect(170,190,160,20);
-            context.fillStyle= 'red'; 
-            context.fillRect(240,140,20,120);
-            context.fillStyle= 'red'; 
-            context.fillRect(190,160,20,5);
-            context.fillStyle= 'red'; 
-            context.fillRect(198,152,5,20);
-            context.fillStyle= 'red'; 
-            context.fillRect(190,230,20,5);
-            context.fillStyle= 'red'; 
-            context.fillRect(198,222,5,20);
-            context.fillStyle= 'red'; 
-            context.fillRect(280,160,20,5);
-            context.fillStyle= 'red'; 
-            context.fillRect(288,152,5,20);
-            context.fillStyle= 'red'; 
-            context.fillRect(280,230,20,5);
-            context.fillStyle= 'red'; 
-            context.fillRect(288,222,5,20);
-            context.fillStyle= 'rgb(0, 183, 255)'; //greece
-            context.fillRect(350,140,60,60);
-            context.fillStyle= 'white';
-            context.fillRect(350,164,60,12);
-            context.fillStyle= 'white';
-            context.fillRect(375,140,12,60);
-            context.fillStyle= 'rgb(0, 183, 255)'; 
-            context.fillRect(410,140,100,12);
-            context.fillStyle= 'rgb(0, 183, 255)'; 
-            context.fillRect(410,164,100,12);
-            context.fillStyle= 'rgb(0, 183, 255)'; 
-            context.fillRect(410,188,100,12);
-            context.fillStyle= 'rgb(0, 183, 255)'; 
-            context.fillRect(350,212,160,12);
-            context.fillStyle= 'rgb(0, 183, 255)'; 
-            context.fillRect(350,236,160,12);
-
+            var canvas1 = document.getElementById('netherlands');
+            var context1 = canvas1.getContext("2d");
+            context1.fillStyle= '#C8102E';//netherlands
+            context1.fillRect(0,0,150,40);
+            context1.fillStyle= '#003DA5';
+            context1.fillRect(0,82,150,40);
+            var canvas2 = document.getElementById('france');
+            var context2 = canvas2.getContext("2d");
+            context2.fillStyle= 'blue';//france
+            context2.fillRect(0,0,40,120);
+            context2.fillStyle= 'red';
+            context2.fillRect(80,0,40,120);
+            var canvas3 = document.getElementById('finland');
+            var context3 = canvas3.getContext("2d");
+            context3.fillStyle= 'rgb(0, 100, 200)';//finland
+            context3.fillRect(0,50,150,20);
+            context3.fillStyle= 'rgb(0, 100, 200)';
+            context3.fillRect(40,0,20,120);
+            var canvas4 = document.getElementById('iceland');
+            var context4 = canvas4.getContext("2d");
+            context4.fillStyle= '#0050db';//iceland
+            context4.fillRect(0,0,150,120);
+            context4.fillStyle= '#FFFF';
+            context4.fillRect(0,45,150,25);
+            context4.fillStyle= '#FFFF';
+            context4.fillRect(42,0,25,120);
+            context4.fillStyle= '#dc3551';
+            context4.fillRect(0,50,150,15);
+            context4.fillStyle= '#dc3551';
+            context4.fillRect(47,0,15,120);
+            var canvas5 = document.getElementById('georgia');
+            var context5 = canvas5.getContext("2d");
+            context5.fillStyle= 'red'; //georgia
+            context5.fillRect(0,50,160,20);
+            context5.fillStyle= 'red'; 
+            context5.fillRect(65,0,20,120);
+            context5.fillStyle= 'red'; 
+            context5.fillRect(25,25,20,5);
+            context5.fillStyle= 'red'; 
+            context5.fillRect(32,18,5,20);
+            context5.fillStyle= 'red'; 
+            context5.fillRect(25,95,20,5);
+            context5.fillStyle= 'red'; 
+            context5.fillRect(32,88,5,20);
+            context5.fillStyle= 'red'; 
+            context5.fillRect(110,25,20,5);
+            context5.fillStyle= 'red'; 
+            context5.fillRect(118,18,5,20);
+            context5.fillStyle= 'red'; 
+            context5.fillRect(110,95,20,5);
+            context5.fillStyle= 'red'; 
+            context5.fillRect(118,88,5,20);
+            var canvas6 = document.getElementById('greece');
+            var context6 = canvas6.getContext("2d");
+            context6.fillStyle= 'rgb(0, 60, 255) '; //greece
+            context6.fillRect(0,0,60,60);
+            context6.fillStyle= 'white';
+            context6.fillRect(0,24,60,12);
+            context6.fillStyle= 'white';
+            context6.fillRect(24,0,12,60);
+            context6.fillStyle= 'rgb(0, 60, 255) '; 
+            context6.fillRect(60,0,100,12);
+            context6.fillStyle= 'rgb(0, 60, 255) '; 
+            context6.fillRect(60,24,100,12);
+            context6.fillStyle= 'rgb(0, 60, 255) '; 
+            context6.fillRect(60,48,100,12);
+            context6.fillStyle= 'rgb(0, 60, 255) '; 
+            context6.fillRect(0,72,160,12);
+            context6.fillStyle= 'rgb(0, 60, 255) '; 
+            context6.fillRect(0,96,160,12);
         </script>
     </body>
 </html>
